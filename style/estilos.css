@@ -1,0 +1,567 @@
+body{
+    background-color: rgb(210, 210, 210);
+    margin: 0px;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+header{
+    background-color: rgb(255, 255, 255);
+    margin: 0px 0px;
+    margin-bottom: 20px;
+    padding: 10px 10px;
+    
+}
+
+.contenedorLinks{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.links{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    padding: 0px;
+    margin: 0px;
+    list-style-type: none;
+    height: 50px;
+}
+
+.links li{
+    margin-right: 38px;
+    font-family: 'Yantramanav', sans-serif;
+    font-weight: bolder;
+    color: rgb(90, 90, 90);
+}
+
+.links li:hover{
+    color: rgb(0, 0, 0);
+    border-bottom: 1px solid black;
+}
+
+.contenedorImg{
+    background-image: url(../images/americas\ logo.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+    width: 90px;
+    height: 100px;
+    padding-right: 25px;
+}
+
+.contenedorImg a {
+    display: block;
+    width: 100%;
+    height: 100%;
+}
+
+.cambiarIdioma{
+    background-image: url(../images/image_processing20210621-25858-1t11jo5.png);
+    background-repeat: no-repeat;
+    background-size: contain;
+    width: 30px;
+    height: 30px;
+    border: 0.5px solid rgb(190, 190, 190);
+    border-radius: 100%;
+}
+
+@media screen and (max-width: 812px) {
+    header{
+        padding: 0px;
+    }
+    .contenedorImg{
+        margin-left: 10px;
+    }
+
+    .links{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-around;
+        padding: 0px;
+        margin: 0px;
+        list-style-type: none;
+        
+    }
+    
+    .links li{
+        font-size: 12px;
+        margin-right: 10px;
+        font-family: 'Yantramanav', sans-serif;
+        font-weight: bolder;
+        color: rgb(90, 90, 90);
+    }
+
+    .contenedorImg{
+        width: 30px;
+        height: 100px;
+        padding-right: 25px;
+    }
+}
+
+
+
+.CtituloPrincipal{
+    border-top-right-radius: 10px;
+    border-top-left-radius: 10px;
+    display: flex;
+    margin: 0px 50px;
+    height: 75vh;
+    background-image: url(../images/shanghai-puerto-de-contenedores-mas-grande-del-mundo.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 10px;
+}
+
+.tituloPrincipal{
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: rgb(255, 255, 255);
+    backdrop-filter: blur(3px);
+    height: 75vh;
+    width: 100%;
+    font-family: 'Jost', sans-serif;
+    font-size: 40px;
+}
+
+@media screen and (max-width: 812px) {
+
+    header{
+        margin-bottom: 0px;
+    }
+
+    .CtituloPrincipal{
+        margin: 0px;
+        height: 60vh;
+    }
+
+    .tituloPrincipal{
+        font-size: 30px;
+        height: 60vh;
+    }
+}
+
+.seccionMain {
+    display: flex;
+    justify-content: center;
+    margin: 10px 50px;
+    min-height: 70vh;
+}
+
+.aboutUs {
+    display: flex;
+    flex-direction: row;
+    padding-top: 0px;
+}
+
+.contenedorSubT {
+    background-color: rgb(218, 231, 77);
+    width: 30%; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+.contenedorSubT h2 {
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+.contenedorP {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    background-color: rgb(255, 255, 255);
+    padding: 10px 30px;
+    width: 70%; 
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.contenedorP:hover {
+    color: rgb(41, 41, 41);
+    background-color: rgb(228, 228, 228);
+}
+
+.contenedorP p {
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+    font-size: 15px;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 812px) {
+.seccionMain{
+    margin: 0px;
+}
+
+    .aboutUs {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedorSubT {
+        background-color: rgb(218, 231, 77);
+        width: 100%;
+        height: 200px;
+        border-radius: 0px;
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .contenedorP {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: fit-content;
+        height: 100%;
+        border-radius: 0%;
+    }
+
+    .contenedorP p {
+        font-size: 15px;
+        width: 100%;
+    }
+}
+
+.services{
+    display: flex;
+    flex-direction: row-reverse;
+    padding-top: 0px;
+    width: 100%;
+}
+
+.contenedorSubTS{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(249, 135, 104);
+    width: 30%;
+    border-radius: 10px;
+    border-top-left-radius: 0px;
+    border-bottom-left-radius: 0px;
+}
+
+.contenedorSubTS h2{
+    color: rgb(255, 255, 255);
+    font-size: 40px;
+    margin: 0px;
+    font-family: 'Jost', sans-serif;
+}
+
+.contenedorPS{
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(255, 255, 255);
+    gap: 10px;
+    width: 70%;
+    justify-content: center;
+    align-items: center;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+    padding: 20px 0px;
+}
+
+.contenedorPS p{
+    margin: 0px;
+    padding: 15px;
+    font-family: 'Jost', sans-serif;
+    font-size: 25px;
+}
+
+.contenedorPS:hover{
+    color: rgb(41, 41, 41);
+    background-color: rgb(228, 228, 228);
+}
+
+.contenedorPS p:hover{
+    border-bottom: 1px solid rgb(201, 201, 201);
+}
+
+@media screen and (max-width: 812px) {
+    .services {
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .contenedorSubTS {
+        width: 100%;
+        height: 200px;
+        border-radius: 0px;
+    }
+
+    .contenedorPS {
+        padding: 20px 0px;
+        width: 100%;
+        height: max-content;
+        gap: 10px;
+        border-radius: 0px;
+    }
+
+    .contenedorPS p {
+        padding: 15px;
+        font-size: 19px;
+    }
+}
+
+#contact{
+    color: aliceblue;
+    display: flex;
+    justify-content: center;
+    padding: 30px;
+    margin: 0px;
+    font-family: "Jost", sans-serif; 
+    font-size: 40px;
+    text-align: center;
+}
+
+.seccionForm {
+    margin: 0px 50px;
+    background-color: rgb(57, 57, 222);
+    display: flex;
+    justify-content: center;
+    padding-bottom: 30px;
+    border-radius: 10px;
+}
+
+
+.contenedorFormulario {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
+    width: 37vw;
+    height: 700px;
+    align-items: center;
+}
+
+.formulario {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.input {
+    height: 30px;
+    border: 0px;
+    border-bottom: 3px solid rgb(170, 170, 255);
+    background-color: rgb(48, 48, 203);
+    padding-left: 7px;
+    color: rgb(255, 255, 255);
+}
+
+.input::placeholder {
+    color:  rgb(190, 190, 255); 
+    font-family: "Jost", sans-serif; 
+    font-size: 20px;
+}
+
+.casillaM {
+    background-color: rgb(48, 48, 203);
+    border: 3px solid rgb(170, 170, 255);
+    border-radius: 2px;
+    font-size: 15px;
+    padding-left: 7px;
+}
+
+.casillaM::placeholder {
+    color: rgb(190, 190, 255); 
+    font-family: "Jost", sans-serif; 
+    font-size: 20px;
+}
+
+.enviar {
+    font-size: 17px;
+    height: 50px;
+    border: 0px;
+    border-radius: 5px;
+    color: rgb(48, 48, 203);
+    background-color: rgb(170, 170, 255);
+}
+
+.enviar:hover {
+    color: rgb(135, 135, 255);
+    background-color: rgb(255, 255, 255);
+}
+
+@media screen and (max-width: 812px) {
+
+    .seccionForm{
+        margin: 0px 0px;
+        border-radius: 0px;
+    }
+
+    .contenedorFormulario{
+        width: 100%;
+    }
+
+    .formulario {
+        width: 90%;
+        display: flex;
+        flex-direction: column;
+        gap: 20px;
+    }
+}
+
+.contenedorFooter{
+    padding: 30px;
+    padding-top: 45px;
+    margin-top: 20px;
+    background-color: rgb(18, 18, 18);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    color: rgb(255, 255, 255);
+}
+
+.wwu{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    
+}
+
+.wwu h2{
+    font-size: 30px;
+    margin: 0px;
+    border-bottom: solid 2px white ;
+}
+
+.wwu p{
+    text-align: center;
+    font-size: 20px;
+    margin: 0px;
+    padding: 20px 0px;
+    text-align: center;
+}
+
+.rights{
+    width: 30vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    font-size: 23px;
+    text-align: center;
+}
+
+.rights img{
+    width: 160px;
+    display: flex;
+    flex-direction: column;
+}
+
+.redes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 30vw;
+    
+}
+
+.redes h2{
+    font-size: 30px;
+    margin: 0px;
+    border-bottom: solid 2px white ;
+}
+
+.logosS{
+    display:flex;
+    gap: 15px;
+}
+
+.redes img{
+    background-color: aliceblue;
+    border-radius: 10px;
+    width: 40px;
+    margin: 20px 0px;
+}
+
+.direccion{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(0, 0, 0);
+    color: rgb(85, 85, 85);
+    font-size: smaller;
+}
+
+@media screen and (max-width: 812px) {
+    .contenedorFooter{
+        padding: 10px;
+        margin: 0px;
+        background-color: rgb(18, 18, 18);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        justify-content: space-between;
+        color: rgb(255, 255, 255);
+        gap: 10px;
+    }
+
+    .wwu h2{
+        font-size: 15px;
+        padding-top: 10px;
+    }
+
+    .wwu p{
+        font-size: 12px;
+    }
+    
+    .rights p{
+        font-size: 13px;
+        margin: 0px;
+    }
+
+    .rights img{
+        font-size: 13px;
+        width: 120px;
+    }
+
+    .redes{
+        gap: 7px;
+    }
+    
+    .redes h2{
+        padding-top: 10px;
+        font-size: 15px;
+    }
+    
+    .logosS{
+        gap: 5px;
+    }
+
+    .redes img{
+        margin: 10px 0px;
+    }
+
+    .direccion {
+        display: flex;
+        justify-content: center;
+    }
+}
