@@ -1,5 +1,7 @@
 const cP = document.querySelector(".contenedorPag");
 const btnCI = document.querySelector(".cambiarIdioma");
+const spanI = document.querySelector(".idioma");
+
 const btnA = document.querySelector(".AU");
 const btnS = document.querySelector(".S");
 const btnCU = document.querySelector(".CU");
@@ -16,6 +18,7 @@ btnCI.addEventListener("click", () => {
         btnS.innerText = "改變語言";
         btnCU.innerText = "聯繫我們";
         btnSM.innerText = "社交媒體";
+        spanI.innerText = "ENG";
 
         cP.innerHTML = `
         <main>
@@ -142,6 +145,7 @@ btnCI.addEventListener("click", () => {
         btnS.innerText = "Services";
         btnCU.innerText = "Contact us";
         btnSM.innerText = "Social Media";
+        spanI.innerText = "CHN";
 
         cP.innerHTML = `
         <div class="contenedorPag">
